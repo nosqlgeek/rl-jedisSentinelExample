@@ -331,10 +331,7 @@ public class JedisSentinelPoolPatched extends JedisPoolAbstract {
                     j.connect();
 
                     log.debug("status = " + j.isConnected());
-
-                    //Sleeping in order to find out if this solves the issue
-                    //Thread.sleep(5000);
-
+                    
                     isWaiting = false;
 
                     log.debug("Successfully reconnected to Sentinel.");
